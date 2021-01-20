@@ -14,16 +14,16 @@ test_path = "Tweet_Data/TestData.csv"
 Model_path = 'Tweet_Data/'
 
 ##################### SET API KEYS ############################
-consumer_key = '6oc1TPJ8hHKxNa0itYbfIqkxv'
-consumer_secret = 'DDfBJp9tPegR0e1b1i6v3KU2OGoNKSIrT4AKWWZJPre1UWIYpg'
-token_key = '1117789254212554752-s2fWlZZix4NtBKYg7hEkgx63otFOib'
-token_secret = 'Pz1Sfff4xkJmPSY7Gny8dYOFZDGGfrprfrtWbSGEHwYzx'
+consumer_key = ###
+consumer_secret = ###
+token_key = ###
+token_secret = ###
 
 auth_params = {
-    'app_key':'6oc1TPJ8hHKxNa0itYbfIqkxv',
-    'app_secret':'DDfBJp9tPegR0e1b1i6v3KU2OGoNKSIrT4AKWWZJPre1UWIYpg',
-    'oauth_token':'1117789254212554752-s2fWlZZix4NtBKYg7hEkgx63otFOib',
-    'oauth_token_secret':'Pz1Sfff4xkJmPSY7Gny8dYOFZDGGfrprfrtWbSGEHwYzx'
+    'app_key':###
+    'app_secret':###
+    'oauth_token':###
+    'oauth_token_secret':###
 }
 
 # Creating an OAuth Client connection
@@ -94,4 +94,5 @@ TVEmbeddingWork.model_PVDBOW.build_PVDBOW(train['0'], train['1'], test['0'], tes
 
 ##################### Embedding pelo Fast Text ####################
 
-TVEmbeddingWork.model_FasText.build_FastText('/Users/sergiojunior/PycharmProjects/TVEmbeddingWork/Tweet_Data/InputDataSA.csv',train['0'], train['1'], test['0'], test['1'],e=100,k=1,cv=3,n=1)
+TVEmbeddingWork.model_FasText.build_FastText('/Users/sergiojunior/PycharmProjects/TVEmbeddingWork/Tweet_Data/InputDataSA.csv',
+                                             train['0'], train['1'], test['0'], test['1'],e=100,k=1,cv=3,n=1)
